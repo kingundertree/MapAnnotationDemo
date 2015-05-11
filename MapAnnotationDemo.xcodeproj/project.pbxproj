@@ -48,6 +48,7 @@
 		27437B4E18E50A1B00D075D6 /* AJKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27437B4D18E50A1B00D075D6 /* AJKMainViewController.m */; };
 		27437B5718E511F900D075D6 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 27437B5618E511F900D075D6 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		27437B9618E514F600D075D6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27437B9518E514F600D075D6 /* libicucore.dylib */; };
+		F865B8991B0059E2005F9EDD /* CLLocationManager+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = F865B8981B0059E2005F9EDD /* CLLocationManager+RT.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		27437B5618E511F900D075D6 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		27437B9318E514BF00D075D6 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		27437B9518E514F600D075D6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F865B8971B0059E2005F9EDD /* CLLocationManager+RT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+RT.h"; sourceTree = "<group>"; };
+		F865B8981B0059E2005F9EDD /* CLLocationManager+RT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+RT.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,7 @@
 		27437AE518E5099E00D075D6 /* MapAnnotationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F865B8961B0059E2005F9EDD /* LocationManager */,
 				27437B1218E50A0E00D075D6 /* mapView */,
 				27437AEE18E5099E00D075D6 /* AJKAppDelegate.h */,
 				27437AEF18E5099E00D075D6 /* AJKAppDelegate.m */,
@@ -266,6 +270,15 @@
 				27437B3218E50A0E00D075D6 /* wl_map_icon_position_press@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		F865B8961B0059E2005F9EDD /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				F865B8971B0059E2005F9EDD /* CLLocationManager+RT.h */,
+				F865B8981B0059E2005F9EDD /* CLLocationManager+RT.m */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27437AEC18E5099E00D075D6 /* main.m in Sources */,
+				F865B8991B0059E2005F9EDD /* CLLocationManager+RT.m in Sources */,
 				27437B3B18E50A0E00D075D6 /* LocIsBaidu.m in Sources */,
 				27437B3918E50A0E00D075D6 /* CheckInstalledMapAPP.m in Sources */,
 				27437B3F18E50A0E00D075D6 /* RegionAnnotationView.m in Sources */,
